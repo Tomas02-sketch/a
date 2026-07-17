@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{ /* hace referencia al objeto html*/
+    /* sistema de colores RGB, en decimal o hexadecimal */
+    --color-primary: #D2C1B6;
+    --color-secondary: #1B3C53;
+    --color-background: #F9F3EF;
+    --color-surface: #456882;
+    --color-blanco: #FFFFFF;
+    --color-negro: #000000;
+    --color-gris-claro: #CCCCCC;
+    --color-gris-oscuro: #333333;
+}
+*{/* con * se señeccionan todos los objetos */
+    box-sizing: border-box;/* evita que asignale ancho o alto a un objeto la propiedad
+    padding no incremente el ancho ni el alto respectivamente */
+
+
+}
+body{
+    font-family: "Urbanist", sans-serif;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 18px;
+    
+}
+p{
+    margin-top: 0;
+    margin-bottom: 20px;
+    line-height: 24px;
+}
+h1,h2,h3, h4, h5, h6{
+    margin: 0;  
+
+
+}
+h1{
+    font-size: 64px;
+    font-weight: 200;
+    letter-spacing: -3px;
+}
+h2{
+    font-size: 36px;
+    font-weight: 900;
+    letter-spacing: -2px; /* Espacio entre caracteres*/
+    text-transform: lowercase; /*muestra el texto en minuscula*/
+}
+h3{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;    
+}
+
+#main-header p{
+    margin-bottom: 0;
+
+
+
+}
+
+#nosotros{/* Regla de estilos para un objeto por su id, empieza con  # */
+    background-color: var(--color-background); /* color de fondo */
+}
+#historia{
+    background-color: var(--color-surface);
+    color: var(--color-blanco);/*color de texto */
+}
+#eventos{
+    background-color: var(--color-primary);
+    color: var(--color-negro)
+}
+#main-footer{
+    background-color: var(--color-gris-oscuro);
+    color: var(--color-gris-claro);
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.container{ /* regla de estilos para uno o varios objetos por su clase empieza con . */
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.padded{
+    /* padding es la distancia del borde al contenido */
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.row{
+    display: flex;/* por defecto acomoda los objetos que contiene uno al costado del otro */ 
+    margin-left: -12px;
+    margin-right: -12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.col{
+    flex-basis: 0;
+    flex-grow: 1;
+    /* En conjunto es para que las cajas tengan el mismo ancho */
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.col-50{
+    flex-basis: 50%;
+    max-width: 50%;
+}
+.col-25{
+    flex-basis: 25%;
+    max-width: 25%;
+}
+.img-fluid{
+    max-width: 100%; /* indica que el ancho maximo del objeto sea igual al de su contenedor */
+}
+
